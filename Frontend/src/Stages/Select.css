@@ -1,0 +1,31 @@
+.form-control {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control select,
+  .form-control input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-control select:focus,
+  .form-control input:focus {
+    outline: none;
+    border-color: #4d90fe;
+  }
+  
+  .form-control p {
+    color: #ff1744;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
