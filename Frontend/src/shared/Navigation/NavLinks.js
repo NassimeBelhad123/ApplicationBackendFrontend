@@ -20,7 +20,25 @@ function NavLinks(props) {
       </li>
       
 
-     
+      <li>
+         <NavLink to="/NouveauStage" style={{ display: 'inline-block' }}>
+            Ajouter stage
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink to="/NouvelEtudiant" style={{display: 'inline-block'}}>
+          Ajouter étudiant
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink to ="/ListeEtudiants">Liste d'étudiants</NavLink>
+      </li>
+
+      <li>
+        <NavLink to ="/ListeStages">Liste stages</NavLink>
+      </li>
 
 
       <li>

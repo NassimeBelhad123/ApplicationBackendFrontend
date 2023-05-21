@@ -3,10 +3,16 @@ import {BrowserRouter as Router, Route, Redirect, Switch} from "react-router-dom
 import PageAccueil from './PageInformatives/PageAccueil'
 import MainNavigation from './shared/Navigation/MainNavigation';
 import Deroulement from './PageInformatives/Deroulement';
-
+import ProfilEtCompetence from './PageInformatives/ProfilEtCompetence';
 import FAQ from './PageInformatives/FAQ';
 import Footer from "./shared/Pied/Footer"
+import NewStudent from './Etudiants/pages/NouvelEtudiant';
+import MesEtudiants from './Etudiants/pages/MesEtudiants';
+import UpdateEtudiant from './Etudiants/pages/UpdateEtudiant';
+import MesStages from "./Stages/pages/MesStages"
+import UpdateStages from "./Stages/pages/UpdateStages"
 
+import NewStage from './Stages/pages/NouveauStage';
 
 
 
@@ -32,10 +38,29 @@ function App(){
                             <FAQ />
                         </Route>
 
-                 
+                        <Route path = "/NouveauStage">
+                            <NewStage />
+                        </Route>
+
+                        <Route path="/ListeStages">
+                            <MesStages />
+                        </Route>
+
+                        <Route path = "/stages/:stageId">
+                            <UpdateStages />
+                        </Route>
 
 
-               
+
+                        <Route path = "/NouvelEtudiant">
+                            <NewStudent />
+                        </Route>
+                        <Route path="/ListeEtudiants" exact>
+                            <MesEtudiants />
+                        </Route>
+                        <Route path="/etudiants/:etudiantId">
+                            <UpdateEtudiant />
+                        </Route>
                      
                         <Redirect to="/" />
                     </Switch>
