@@ -24,7 +24,7 @@ const MesStages = () => {
     const fetchStages = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/stages/`
+          process.env.REACT_APP_BACKEND_URL+`/stages/`
         );
         setLoadedStages(responseData.stages);
       } catch (err) {}

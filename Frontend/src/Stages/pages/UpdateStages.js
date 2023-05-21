@@ -78,7 +78,7 @@ const UpdateStage = () => {
     const fetchStage = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/stages/${stageId}`
+          process.env.REACT_APP_BACKEND_URL+`/stages/${stageId}`
         );
         setLoadedStage(responseData.stage);
         console.log(responseData.stage)
@@ -137,7 +137,7 @@ const UpdateStage = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/stages/${stageId}`,
+        process.env.REACT_APP_BACKEND_URL+`/${stageId}`,
         'PATCH',
         JSON.stringify({
             contact: formState.inputs.nomContact.value,

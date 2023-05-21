@@ -55,7 +55,7 @@ const UpdateEtudiant = () => {
     const fetchEtudiant = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/etudiants/${etudiantId}`
+          process.env.REACT_APP_BACKEND_URL+`/etudiants/${etudiantId}`
         );
         setLoadedEtudiant(responseData.etudiant);
         console.log(responseData.etudiant)
@@ -92,7 +92,7 @@ const UpdateEtudiant = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/etudiants/${etudiantId}`,
+        process.env.REACT_APP_BACKEND_URL+`etudiants/${etudiantId}`,
         'PATCH',
         JSON.stringify({
           numero: formState.inputs.numeroDA.value,

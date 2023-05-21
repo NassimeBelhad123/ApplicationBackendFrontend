@@ -22,7 +22,7 @@ const StageItem = props =>{
         setShowConfirmModal(false);
         try{
             await sendRequest(
-                `http://localhost:5000/api/stages/${props.id}`,
+                process.env.REACT_APP_BACKEND_URL+`/stages/${props.id}`,
                 'DELETE'
             );
             props.onDelete(props.id);

@@ -52,7 +52,7 @@ const NewStudent = () =>{
     
         try {
           const reponseData = await sendRequest(
-            "http://localhost:5000/api/etudiants/",
+            process.env.REACT_APP_BACKEND_URL + "/etudiants/",
             "POST",
             JSON.stringify({
               numero: formState.inputs.numeroDA.value,

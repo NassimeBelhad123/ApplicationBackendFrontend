@@ -22,7 +22,7 @@ const EtudiantItem = props =>{
         setShowConfirmModal(false);
         try{
             await sendRequest(
-                `http://localhost:5000/api/etudiants/${props.id}`,
+                process.env.REACT_APP_BACKEND_URL+`/etudiants/${props.id}`,
                 'DELETE'
             );
             props.onDelete(props.id);
