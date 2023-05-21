@@ -11,7 +11,7 @@ import MesEtudiants from './Etudiants/pages/MesEtudiants';
 import UpdateEtudiant from './Etudiants/pages/UpdateEtudiant';
 import MesStages from "./Stages/pages/MesStages"
 import UpdateStages from "./Stages/pages/UpdateStages"
-
+import TexteformulaireEmployeurs from './PageInformatives/TexteFormulaireEmployeurs';
 import NewStage from './Stages/pages/NouveauStage';
 
 
@@ -32,6 +32,10 @@ function App(){
 
                         <Route path = "/profil&competence">
                             <ProfilEtCompetence />
+                        </Route>
+
+                        <Route path = "/texteFormulaireEmployeurs">
+                            <TexteformulaireEmployeurs/>
                         </Route>
 
                         <Route path = "/FAQ">

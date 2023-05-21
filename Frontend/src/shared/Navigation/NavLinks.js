@@ -16,6 +16,7 @@ function NavLinks(props) {
           <li><NavLink to="/deroulement">Déroulement</NavLink></li>
           <li><NavLink to="/profil&competence">Profil & compétences</NavLink></li>
           <li><NavLink to="/FAQ">FAQ</NavLink></li>
+          <li><NavLink to="/texteFormulaireEmployeurs">Formulaire Employeur</NavLink></li>
         </ul>
       </li>
       
