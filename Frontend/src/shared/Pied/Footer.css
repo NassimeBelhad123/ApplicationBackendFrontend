@@ -1,0 +1,6 @@
+footer {
+    background-color: #5e5a5a; /* couleur de fond grise */
+    color: #000000; /* couleur de texte pour les liens et le texte dans le bas de page */
+    text-align: center; /* centre le contenu du bas de page horizontalement */
+    padding: 20px; /* ajoute de l'espace autour du contenu du bas de page */
+  }
