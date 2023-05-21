@@ -34,9 +34,9 @@ app.use((error, requete, reponse, next) => {
     message: error.message || "Une erreur inconnue est survenue",
   });
 });
-
+console.log(process.env.DB_NAME);
 mongoose
-.connect("mongodb://127.0.0.1:27017/mern")
+.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}.bgep3rz.mongodb.net/?retryWrites=true&w=majority`)
 .then(() => {
     app.listen(5000)
     console.log("Connexion à la base de données réussie");

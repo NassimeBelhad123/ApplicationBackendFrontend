@@ -61,8 +61,8 @@ const EtudiantItem = props =>{
                     <li className="etudiant-item">
                         <Card className="etudiant-item__content">
                             <div className="etudiant-item__info">
-                                <h2>{props.numero}</h2>
-                                <h3>{props.nom}</h3>
+                                <h2>{props.nom}</h2>
+                                <h3>{props.numero}</h3>
                                 <h3>{props.courrielEtu}</h3>
                                 <h3>{props.profilEtu}</h3>
                             </div>
