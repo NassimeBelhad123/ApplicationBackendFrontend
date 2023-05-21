@@ -165,8 +165,8 @@ const NewStage = () =>{
                 errorText="Sélectionnez un type de stage."
                 options={[
                     { value: '', label: 'Sélectionnez un type de stage' },
-                    { value: 'reseau', label: 'Réseaux et sécurité' },
-                    { value: 'application', label: "Développement d'application"  }
+                    { value: 'Réseaux et sécurité', label: 'Réseaux et sécurité' },
+                    { value: "Développement d'application", label: "Développement d'application"  }
                 ]}
                 onInput={inputHandler}
             />

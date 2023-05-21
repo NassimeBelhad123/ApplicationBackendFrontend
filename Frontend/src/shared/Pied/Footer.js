@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <footer>
-      <p>Sylvain Labranche     <br />sylvain.labranche@cmontmorency.qc.ca</p>
+      <pre className = "footer-text">Sylvain Labranche                              sylvain.labranche@cmontmorency.qc.ca                         Dernière modification: 21 Mai 2023</pre>
       
     </footer>
   );
