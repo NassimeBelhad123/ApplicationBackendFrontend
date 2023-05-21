@@ -8,6 +8,7 @@ import ErrorModal from "../../shared/ErrorModal"
 import { useForm } from '../../shared/hooks/form-hook';
 import { useHttpClient } from '../../shared/hooks/http-hook';
 import Select from '../Select';
+import "./NouveauStage.css"
 
 const NewStage = () =>{
     const { error, sendRequest, clearError } = useHttpClient();

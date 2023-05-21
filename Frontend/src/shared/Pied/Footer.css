@@ -22,5 +22,5 @@ html, body {
 #root {
   min-height: 100%;
   position: relative;
-  padding-bottom: 80px; /* Hauteur du footer */
+  padding-bottom: 80px; 
 }

@@ -166,8 +166,8 @@ const UpdateEtudiant = () => {
                 errorText="Choisissez un profil"
                 options = {[
                   {value: '', label: "Selectionner un profil de sortie"},
-                  {value: "Reseau", label: 'Reseau et sécurité'},
-                  {value: 'application', label: "Développement d'application"}
+                  {value: "Reseau et sécurité", label: 'Reseau et sécurité'},
+                  {value: "Développement d'application", label: "Développement d'application"}
               ]}
                 onInput={inputHandler}
                 initialValue={loadedEtudiant.profilEtu}

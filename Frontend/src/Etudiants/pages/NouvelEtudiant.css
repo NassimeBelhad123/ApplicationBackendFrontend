@@ -1,3 +1,18 @@
-.place-form{
-    background-color: rgb(143, 82, 82);
-}
+.place-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Couleur d'arrière-plan */
+  }
+  
+  .place-form input,
+  .place-form select {
+    margin-bottom: 10px;
+  }
+  
+  .place-form button {
+    margin-top: 20px;
+  }
+  

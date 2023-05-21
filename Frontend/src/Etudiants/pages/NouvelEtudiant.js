@@ -8,6 +8,7 @@ import ErrorModal from "../../shared/ErrorModal"
 import { useForm } from '../../shared/hooks/form-hook';
 import { useHttpClient } from '../../shared/hooks/http-hook';
 import Select from '../../Stages/Select';
+import './NouvelEtudiant.css';
 
 
 
@@ -115,8 +116,8 @@ const NewStudent = () =>{
                 errorText="Entrez un nom d'entreprise"
                 options = {[
                     {value: '', label: "Selectionner un profil de sortie"},
-                    {value: "Reseau", label: 'Reseau et sécurité'},
-                    {value: 'application', label: "Développement d'application"}
+                    {value: "Reseau et sécurité", label: 'Reseau et sécurité'},
+                    {value: "Développement d'application", label: "Développement d'application"}
                 ]}
                 onInput={inputHandler}
             />

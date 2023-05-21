@@ -1,0 +1,22 @@
+.stage-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .stage-list.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+  }
+  
+  .stage-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stage-list .btn-create {
+    margin-top: 1rem;
+  }
+  

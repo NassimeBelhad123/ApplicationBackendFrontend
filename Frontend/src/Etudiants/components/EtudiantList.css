@@ -1,0 +1,22 @@
+.etudiant-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .etudiant-list.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+  }
+  
+  .etudiant-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .etudiant-list .btn-create {
+    margin-top: 1rem;
+  }
+  
