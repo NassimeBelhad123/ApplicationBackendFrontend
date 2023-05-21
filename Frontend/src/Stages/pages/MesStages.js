@@ -4,10 +4,19 @@ import { useParams } from "react-router-dom";
 import StageList from "../components/StageList";
 import ErrorModal from "../../shared/ErrorModal";
 import { useHttpClient } from "../../shared/hooks/http-hook";
+import TrierStage from "../components/TrierStages";
 
 const MesStages = () => {
   const [loadedStages, setLoadedStages] = useState();
   const { error, sendRequest, clearError } = useHttpClient();
+  const [filteredProfil, setFilteredProfil] = useState('programmation')
+
+  const filterChangeHandler = (selectedProfil) =>{
+    setFilteredProfil(selectedProfil)
+  }
+  
+
+
 
   const staId = useParams().staId;
 
@@ -24,13 +33,16 @@ const MesStages = () => {
   }, [sendRequest, staId]);
 
   const stageDeletedHandler = (deletedStageId) => {
-    setLoadedStages((prevStudents) =>
-      prevStudents.filter((stage) => stage.id !== deletedStageId)
+    setLoadedStages((prevStages) =>
+      prevStages.filter((stage) => stage.id !== deletedStageId)
     );
   };
   return (
     <React.Fragment>
       <ErrorModal error={error} onClear={clearError} />
+      <TrierStage 
+        selected = {filteredProfil}
+        onChangementFiltre = {filterChangeHandler}  />
       {loadedStages && (
         <StageList items={loadedStages} onDeleteStage={stageDeletedHandler} />
       )}

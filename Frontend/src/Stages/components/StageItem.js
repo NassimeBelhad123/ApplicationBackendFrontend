@@ -68,7 +68,7 @@ const StageItem = props =>{
                                 <h3>{props.type}</h3>
                                 <h3>{props.postesDispo}</h3>
                                 <h3>{props.description}</h3>
-                                <h3>{props.remuneration}</h3>
+                          
                                
                             </div>
                             <div className="stage-item__actions">

@@ -201,7 +201,7 @@ const UpdateStage = () => {
           <Input 
                 id="numeroTelephoneContact"
                 element="input"
-                type="tel"
+                type="number"
                 label="numero de telephone"
                 validators={[VALIDATOR_REQUIRE()]}
                 errorText="Entrez un numero de telephone"

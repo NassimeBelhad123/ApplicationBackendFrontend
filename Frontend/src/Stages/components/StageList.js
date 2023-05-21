@@ -17,7 +17,7 @@ const StageList = props =>{
         );
     }
 
-
+    const filteredStages = props.items.filter((stage) => stage.type === props.filteredProfil )
     return(
         <ul className="stage-list">
             {props.items.map(stage =>(

@@ -7,6 +7,9 @@ import {VALIDATOR_REQUIRE,VALIDATOR_MINLENGTH, VALIDATOR_EMAIL} from '../../shar
 import ErrorModal from "../../shared/ErrorModal"
 import { useForm } from '../../shared/hooks/form-hook';
 import { useHttpClient } from '../../shared/hooks/http-hook';
+import Select from '../../Stages/Select';
+
+
 
 
 const NewStudent = () =>{
@@ -105,13 +108,16 @@ const NewStudent = () =>{
                 onInput={inputHandler}
             />
 
-            <Input 
+            <Select 
                 id="profilEtudiant"
-                element="input"
-                type="text"
                 label="profil de l'étudiant"
                 validators={[VALIDATOR_REQUIRE]}
                 errorText="Entrez un nom d'entreprise"
+                options = {[
+                    {value: '', label: "Selectionner un profil de sortie"},
+                    {value: "Reseau", label: 'Reseau et sécurité'},
+                    {value: 'application', label: "Développement d'application"}
+                ]}
                 onInput={inputHandler}
             />
 

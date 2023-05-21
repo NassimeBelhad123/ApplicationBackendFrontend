@@ -129,7 +129,7 @@ const NewStage = () =>{
             <Input
                 id="numeroTelephoneContact"
                 element="input"
-                type="tel"
+                type="number"
                 label="numero de telephone"
                 validators={[VALIDATOR_REQUIRE()]}
                 errorText="Entrez un numero de telephone"
@@ -197,7 +197,7 @@ const NewStage = () =>{
                 element="input"
                 label="Rémunération"
                 validators={[VALIDATOR_REQUIRE]}
-                errorText="Entrez une rémunération"
+                errorText="Entrez une rémunération ou 'Aucun' "
                 onInput={inputHandler}
             />
 

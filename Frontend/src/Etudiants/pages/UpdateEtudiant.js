@@ -12,8 +12,11 @@ import {
 } from '../../shared/util/validators';
 import { useForm } from '../../shared/hooks/form-hook';
 import { useHttpClient } from '../../shared/hooks/http-hook';
-
+import Select from '../../Stages/Select';
 import './NouvelEtudiant.css';
+
+
+
 
 const UpdateEtudiant = () => {
  
@@ -156,13 +159,16 @@ const UpdateEtudiant = () => {
                  initialValid={true}
             />
 
-            <Input 
+            <Select 
                 id="profilEtudiant"
-                element="input"
-                type="text"
                 label="profil de l'étudiant"
                 validators={[VALIDATOR_REQUIRE]}
                 errorText="Choisissez un profil"
+                options = {[
+                  {value: '', label: "Selectionner un profil de sortie"},
+                  {value: "Reseau", label: 'Reseau et sécurité'},
+                  {value: 'application', label: "Développement d'application"}
+              ]}
                 onInput={inputHandler}
                 initialValue={loadedEtudiant.profilEtu}
                 initialValid={true}
