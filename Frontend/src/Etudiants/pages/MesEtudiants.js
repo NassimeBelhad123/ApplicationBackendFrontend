@@ -15,7 +15,7 @@ const MesEtudiants = () => {
     const fetchEtudiants = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/etudiants/`
+          process.env.REACT_APP_BACKEND_URL+`/etudiants/`
         );
         setLoadedEtudiants(responseData.etudiants);
       } catch (err) {}
