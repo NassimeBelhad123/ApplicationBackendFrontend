@@ -137,7 +137,7 @@ const UpdateStage = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL+`/${stageId}`,
+        process.env.REACT_APP_BACKEND_URL+`/stages/${stageId}`,
         'PATCH',
         JSON.stringify({
             contact: formState.inputs.nomContact.value,
