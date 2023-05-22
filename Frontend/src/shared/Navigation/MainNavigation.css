@@ -45,7 +45,11 @@
   }
 
 
-  .image{
-    max-width: 20%;
+  .image {
+    max-width: 30%;
     height: auto;
+    display: block;
+    margin-top: 10px; /* Ajustez cette valeur selon vos besoins */
+    margin-bottom: 10px; /* Ajustez cette valeur selon vos besoins */
   }
+  

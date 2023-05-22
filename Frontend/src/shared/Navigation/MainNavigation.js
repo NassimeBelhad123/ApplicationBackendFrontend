@@ -5,8 +5,9 @@ import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import SideDrawer from "./SideDrawer";
 import Backdrop from "../Backdrop"
-
+import "../../"
 import "./MainNavigation.css";
+import logoMomo2 from "../../logoMomo2.jpg"
 
 function MainNavigation(props) {
 
@@ -36,7 +37,7 @@ function MainNavigation(props) {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/"><img src="https://th.bing.com/th/id/R.092fa299d965b753d3bcef99ed52f1c0?rik=UeHFXpGsRIzV2A&riu=http%3a%2f%2fpierre-luc-delisle.com%2fwp-content%2fuploads%2fLogomo_1400.png&ehk=%2fw2fSI8Nz99FyXdwLdP1X%2fykuWjFMPSHMqiePcBg3HE%3d&risl=&pid=ImgRaw&r=0" alt="description_de_l_image" className="image" /></Link>
+          <Link to="/"><img src={logoMomo2} alt="description_de_l_image" className="image" /></Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
