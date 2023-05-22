@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ApplicationBackendFrontend/static/css/main.eabdba79.chunk.css",
-    "main.js": "/ApplicationBackendFrontend/static/js/main.a68de653.chunk.js",
-    "main.js.map": "/ApplicationBackendFrontend/static/js/main.a68de653.chunk.js.map",
+    "main.js": "/ApplicationBackendFrontend/static/js/main.e449e742.chunk.js",
+    "main.js.map": "/ApplicationBackendFrontend/static/js/main.e449e742.chunk.js.map",
     "runtime-main.js": "/ApplicationBackendFrontend/static/js/runtime-main.d0c07552.js",
     "runtime-main.js.map": "/ApplicationBackendFrontend/static/js/runtime-main.d0c07552.js.map",
     "static/js/2.e610696c.chunk.js": "/ApplicationBackendFrontend/static/js/2.e610696c.chunk.js",
     "static/js/2.e610696c.chunk.js.map": "/ApplicationBackendFrontend/static/js/2.e610696c.chunk.js.map",
     "index.html": "/ApplicationBackendFrontend/index.html",
-    "precache-manifest.af63396d429ed9feec47b734ab028f90.js": "/ApplicationBackendFrontend/precache-manifest.af63396d429ed9feec47b734ab028f90.js",
+    "precache-manifest.84bb1a1b4c605c636c418d48e9888582.js": "/ApplicationBackendFrontend/precache-manifest.84bb1a1b4c605c636c418d48e9888582.js",
     "service-worker.js": "/ApplicationBackendFrontend/service-worker.js",
     "static/css/main.eabdba79.chunk.css.map": "/ApplicationBackendFrontend/static/css/main.eabdba79.chunk.css.map",
     "static/media/logoMomo2.jpg": "/ApplicationBackendFrontend/static/media/logoMomo2.18f82ec4.jpg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d0c07552.js",
     "static/js/2.e610696c.chunk.js",
     "static/css/main.eabdba79.chunk.css",
-    "static/js/main.a68de653.chunk.js"
+    "static/js/main.e449e742.chunk.js"
   ]
 }
