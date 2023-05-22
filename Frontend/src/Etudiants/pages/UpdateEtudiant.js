@@ -92,7 +92,7 @@ const UpdateEtudiant = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL+`etudiants/${etudiantId}`,
+        process.env.REACT_APP_BACKEND_URL+`/${etudiantId}`,
         'PATCH',
         JSON.stringify({
           numero: formState.inputs.numeroDA.value,
